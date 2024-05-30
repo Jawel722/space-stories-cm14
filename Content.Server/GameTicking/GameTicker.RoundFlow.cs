@@ -4,12 +4,14 @@ using Content.Server.Discord;
 using Content.Server.GameTicking.Events;
 using Content.Server.Ghost;
 using Content.Server.Maps;
+using Content.Server.Voting.Managers;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
 using Content.Shared.Mind;
 using Content.Shared.Players;
 using Content.Shared.Preferences;
+using Content.Shared.Voting;
 using JetBrains.Annotations;
 using Prometheus;
 using Robust.Server.Maps;
@@ -27,6 +29,7 @@ namespace Content.Server.GameTicking
     {
         [Dependency] private readonly DiscordWebhook _discord = default!;
         [Dependency] private readonly ITaskManager _taskManager = default!;
+        [Dependency] private readonly IVoteManager _vote = default!; // Stories-AutoVote
 
         private static readonly Counter RoundNumberMetric = Metrics.CreateCounter(
             "ss14_round_number",
@@ -73,8 +76,7 @@ namespace Content.Server.GameTicking
         /// <returns></returns>
         public bool CanUpdateMap()
         {
-            return RunLevel == GameRunLevel.PreRoundLobby &&
-                   _roundStartTime - RoundPreloadTime > _gameTiming.CurTime;
+            return (RunLevel == GameRunLevel.PreRoundLobby || RunLevel == GameRunLevel.PostRound); // Stories-AutoVote
         }
 
         /// <summary>
@@ -335,6 +337,10 @@ namespace Content.Server.GameTicking
 
             ShowRoundEndScoreboard(text);
             SendRoundEndDiscordMessage();
+
+            _gameMapManager.ClearSelectedMap(); // Stories-AutoVote
+            _vote.CreateStandardVote(null, StandardVoteType.Map); // Stories-AutoVote
+            _vote.CreateStandardVote(null, StandardVoteType.Preset); // Stories-AutoVote
         }
 
         public void ShowRoundEndScoreboard(string text = "")
@@ -556,7 +562,7 @@ namespace Content.Server.GameTicking
 
             _banManager.Restart();
 
-            _gameMapManager.ClearSelectedMap();
+            // _gameMapManager.ClearSelectedMap(); // Stories-AutoVote 
 
             // Clear up any game rules.
             ClearGameRules();
