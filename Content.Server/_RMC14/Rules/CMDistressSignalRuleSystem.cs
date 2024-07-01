@@ -931,7 +931,7 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
                 marinesAliveCount++;
         }
 
-        var wrappedMessage = Loc.GetString("ai-announcement-bioscan-xeno", ("xenoCount", xenosAliveCount), ("marinesCount", marinesAliveCount));
+        var wrappedMessage = Loc.GetString("ai-announcement-bioscan-xeno", ("marinesCount", marinesAliveCount));
         var filter = Filter.Empty()
             .AddWhereAttachedEntity(e =>
                 HasComp<XenoComponent>(e)
@@ -940,7 +940,7 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
         _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Radio, wrappedMessage, wrappedMessage, default, false, true, null);
         _audio.PlayGlobal(sound, filter, true, AudioParams.Default.WithVolume(-2f));
 
-        wrappedMessage = Loc.GetString("ai-announcement-bioscan-marine", ("marinesCount", marinesAliveCount));
+        wrappedMessage = Loc.GetString("ai-announcement-bioscan-marine", ("xenoCount", xenosAliveCount), ("marinesCount", marinesAliveCount));
         filter = Filter.Empty()
             .AddWhereAttachedEntity(e =>
                 HasComp<MarineComponent>(e) ||
