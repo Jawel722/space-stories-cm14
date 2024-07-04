@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ ComputerCargoOrders, CMCargoCatalog ]
+  parent: [ BaseStructure, CMCargoCatalog ]
   id: CMASRSConsole
   name: ASRS console
   description: A console for the Automated Storage Retrieval System.
@@ -44,6 +44,18 @@
   - type: ApcPowerReceiver
     powerLoad: 0
     needsPower: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.35,0.25,0.35"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Anchorable
 
 - type: entity
   id: CMCargoElevator
