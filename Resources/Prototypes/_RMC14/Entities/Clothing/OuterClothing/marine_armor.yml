@@ -1,4 +1,4 @@
-﻿# m3
+# m3
 - type: entity
   parent: RMCBaseArmor
   id: CMArmorM3Medium
@@ -120,6 +120,11 @@
   - type: ExplosionResistance
     damageCoefficient: 0
     worn: false
+  - type: RMCMagneticArmor
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno
 
 - type: entity
   parent: CMArmorM3Medium
@@ -402,7 +407,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
-  - type: RMCMagneticArmor
   - type: ClothingBlockBackpack
   - type: SmartGunArmor
 
