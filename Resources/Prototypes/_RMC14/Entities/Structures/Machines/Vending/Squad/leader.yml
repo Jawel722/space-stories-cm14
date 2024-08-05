@@ -37,9 +37,9 @@
     #  points: 0
     #- id: CMXM88HeavyRifle
     #  points: 0
-    - name: Armors
+    - name: Броня
       entries:
-      - id: CMVendorBundleArmorM4
+      - id: CMArmorM4
         points: 16
     - name: Предметы одежды
       entries:
@@ -67,7 +67,7 @@
     #  points: 3
     #- id: CMLaserDesignator
     #  points: 5
-    - name: Оптика шлема
+    - name: Оптика для шлема
       entries: [ ]
     #- id: CMWeldingVisor
     #  points: 5
@@ -77,7 +77,7 @@
     #  recommended: true
     #- id: CMNightVisionOptic
     #  points: 20
-    - name: Engineering Supplies
+    - name: Инженерные принадлежности
       entries:
       - id: CMHandsInsulated
         points: 3
@@ -96,7 +96,7 @@
         points: 7
         recommended: true
       - id: CMSandbagEmpty25
-        name: sandbags x25
+        name: мешки с песком x25
         points: 10
         recommended: true
     #- id: CMSignalFlarePack
@@ -105,7 +105,7 @@
         points: 5
     #- id: CMWeldingGoggles
     #  points: 5
-    - name: Взрывчатка
+    - name: Взрвчатка
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 18
@@ -155,7 +155,7 @@
         points: 4
       - id: CMRollerBedSpawnFolded
         points: 2
-    - name: Primary Ammunition
+    - name: Основные боеприпасы
       entries:
       - id: CMMagazineRifleM4SPRAP
         points: 6
@@ -167,7 +167,7 @@
         points: 6
       - id: CMMagazineRifleM54CExt
         points: 6
-    - name: Sidearm Ammunition
+    - name: Боеприпасы вторичного оружия
       entries:
       - id: RMCSpeedLoader44Marksman
         points: 6
@@ -217,21 +217,21 @@
     jobs:
     - CMSquadLeader
     sections:
-    - name: Стандартное снаряжение
+    - name: Стандартное оборудование
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleSquadLeaderApparel
-      - id: CMVendorBundleArmorB12
+      - id: CMArmorB12
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
-    - name: Рюкзак
+    - name: Рюкзаки
       choices: { CMBackpack: 1 }
       entries:
       - id: CMBackpackMarine
 #      - id: CMScabbardMacheteFull
       - id: CMSatchelMarine
         recommended: true
-    - name: Belt
+    - name: Пояс
       choices: { CMBelt: 1 }
       entries:
     #- id: CMG8AGeneralUtilityPouch
@@ -246,20 +246,20 @@
     #- id: CMM276ShotgunShellLoadingRig
       - id: CMBeltUtilityFilled
       - id: RMCBeltGrenade
-    - name: Pouches
+    - name: подсумок
       choices: { RMCPouch: 2 }
       entries:
       - id: RMCPouchAutoinjectorFill
         recommended: true
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: подсумок первой помощи (многоразовые инъекторы)
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: подсумок первой помощи (марля, мазь) # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: подсумок первой помощи (таблетки)
         recommended: true
       - id: RMCPouchFlareFilled
-        name: Flare pouch (Full)
+        name: подсумок фаеров (полный)
       #- id: CMFuelTankStrapPouch
       - id: RMCPouchGeneralLarge
         recommended: true
@@ -277,7 +277,7 @@
       #- id: CMShoulderHolster
       - id: CMWebbing
     #- id: CMDropPouch
-    - name: Mask
+    - name: Маски
       choices: { CMMask: 1 }
       entries:
       - id: CMMaskGas

@@ -17,7 +17,7 @@
     - CMWeaponsSpecialist
     pointsType: Specialist
     sections:
-    - name: Наборы специалистов по оружию
+    - name: Weapons Specialist Sets
       choices: { SquadSpecKit: 1 }
       sharedSpecLimit: 2 # 2 as requested until Scout and Pyro are added
       entries:
@@ -28,8 +28,7 @@
       #  points: 0
       #- id: ScoutSet
       - id: CMSniperEquipmentCase
-      - id: RMCSniperAntiMaterielEquipmentCase
-    - name: Дополнительные боеприпасы для скаутов
+    - name: Extra Scout Ammunition
       entries: [ ]
     #- id: A19HighVelocityImpactMagazine
     #  points: 40
@@ -37,17 +36,15 @@
     #  points: 40
     #- id: A19HighVelocityMagazine
     #  points: 40
-    - name: Дополнительные снайперские патроны
+    - name: Extra Sniper Ammunition
       entries:
+#      - id: CMMagazineSniperM96S # TODO rmc14 CMMagazineSniperM96SFlak
+#        points: 40
+#      - id: CMMagazineSniperM96S # TODO rmc14 CMMagazineSniperM96SIncendiary
+#        points: 40
       - id: CMMagazineSniperM96S
         points: 40
-      - id: CMMagazineSniperM96SIncendiary
-        points: 40
-      - id: CMMagazineSniperM96SFlak
-        points: 40
-      - id: CMMagazineSniperXM43E1AntiMateriel
-        points: 40
-    - name: Дополнительные боеприпасы для разрушителей
+    - name: Extra Demolitionist Ammunition
       entries:
       - id: RMCRocket84mmAntiArmor
         points: 40
@@ -55,7 +52,7 @@
         points: 40
     #- id: 84mmWhitePhosphorusRocket
     #  points: 40
-    - name: Дополнительные гранаты
+    - name: Extra Grenades
       entries:
       - id: CMGrenadeHighExplosive
         name: M40 HEDP Blast Grenades (x6)
@@ -79,7 +76,7 @@
     #  points: 40
     #- id: M74AGMSSmokeGrenadesx6
     #  points: 20
-    - name: Дополнительные огнеметные баки
+    - name: Extra Flamethrower Tanks
       entries: [ ]
     #- id: LargeIncineratorTank
     #  points: 40
@@ -103,13 +100,13 @@
     jobs:
     - CMWeaponsSpecialist
     sections:
-    - name: Стандартное снаряжение
+    - name: Стандартное оборудование
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleWeaponsSpecialistApparel
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
-    - name: Рюкзак
+    - name: Рюкзаки
       choices: { CMBackpack: 1 }
       entries:
       - id: CMBackpackMarine
@@ -125,7 +122,7 @@
     #- id: CMM276M44HolsterRig
     #- id: CMM276M82FHolsterRig
     #- id: CMM276ShotgunShellLoadingRig
-    - name: Подсумки
+    - name: подсумок
       choices: { RMCPouch: 2 }
       entries:
       - id: RMCPouchFirstAidInjectors
@@ -138,7 +135,7 @@
         name: подсумок первой помощи (таблетки)
         recommended: true
       - id: RMCPouchFlareFilled
-        name: подсумок фаеров (заполненный)
+        name: подсумок фаеров (полный)
       - id: RMCPouchMagazine
         recommended: true
       - id: RMCPouchShotgun
@@ -147,7 +144,7 @@
       - id: RMCPouchGeneralMedium
       - id: RMCPouchPistol
       #- id: CMSlingPouch
-    - name: Аксессуары
+    - name: Accessories
       choices: { CMAccessories: 1 }
       entries:
       - id: CMWebbingBrown
@@ -167,7 +164,7 @@
         points: 15
       - id: RMCSmartPistolCase
         points: 15
-    - name: Sidearm Ammunition
+    - name: Боеприпасы вторичного оружия
       entries:
       - id: RMCSpeedLoader44Marksman
         points: 10
@@ -199,11 +196,11 @@
     #- id: CMMotionDetector
       - id: RMCWhistle
         points: 5
-    - name: Binoculars
+    - name: Бинокли
       entries:
       - id: RMCBinoculars
         points: 5
-    - name: Оптика шлема
+    - name: Оптика для шлема
       entries: [ ]
     #- id: CMMedicalHelmetOptic
     #- id: CMWeldingVisor

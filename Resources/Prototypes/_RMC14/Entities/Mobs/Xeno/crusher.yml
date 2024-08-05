@@ -62,7 +62,6 @@
       groups:
         Brute: 40
   - type: CrusherShield
-  - type: XenoShield
   - type: Tackle
     threshold: 5
     stun: 5

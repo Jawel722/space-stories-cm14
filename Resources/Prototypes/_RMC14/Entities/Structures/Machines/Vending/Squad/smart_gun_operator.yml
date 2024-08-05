@@ -15,17 +15,17 @@
     jobs:
     - CMSmartGunOperator
     sections:
-    - name: Набор умного оружия (обязательно)
+    - name: Smart Gun Set (Mandatory)
       takeAll: CMSmartGunSet
       entries:
       - id: CMSmartGunOperatorEquipmentCase
-    - name: Обвесы
+    - name: Gun Attachments
       choices: { CMGunAttachments: 1 }
       entries:
 #      - id: RMCAttachmentLaserSight # TODO RMC14 when other pistols are available here
 #      - id: RMCAttachmentS5RedDotSight # Uncomment when accuracy is implemented.
       - id: RMCAttachmentS6ReflexSight
-    - name: Взрывчатка
+    - name: Взрвчатка
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 30
@@ -45,13 +45,13 @@
     #  points: 20
     #- id: CMM20MineBox4
     #  points: 20
-    - name: Боеприпасы к оружию
+    - name: Боеприпасы вторичного оружияs
       entries:
       - id: CMMagazinePistolMK80
         points: 5
       - id: RMCMagazinePistolSU6
         points: 10
-    - name: Огнестрельное оружие ограниченного поражения
+    - name: Restricted Firearms
       entries:
       - id: RMCMK80Case
         points: 15
@@ -85,7 +85,7 @@
     #  points: 10
     #- id: CMLaserDesignator
     #  points: 15
-    - name: Оптика шлема
+    - name: Оптика для шлема
       entries: [ ]
     #- id: CMMedicalHelmetOptic
     #  points: 15
@@ -123,22 +123,22 @@
     jobs:
     - CMSmartGunOperator
     sections:
-    - name: Стандартное снаряжение
+    - name: Стандартное оборудование
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleRiflemanApparel
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
-    - name: Пояса
+    - name: Пояс
       choices: { CMBelt: 1 }
       entries:
      #- id: CMM802SmartGunOperatorSidearmBeltFilled
       - id: CMBeltSmartGunOperatorFilled
-    - name: Подсумки
+    - name: подсумок
       choices: { RMCPouch: 2 }
       entries:
       - id: RMCPouchFlareFilled
-        name: подсумок фаеров (заполненный)
+        name: подсумок фаеров (полный)
 #      - id: RMCPouchElectronics # TODO RMC14
       - id: RMCPouchFirstAidInjectors
         name: подсумок первой помощи (многоразовые инъекторы)
@@ -157,7 +157,7 @@
       - id: RMCPouchPistol
       - id: RMCPouchMacheteFilled
     #- id: CMSlingPouch
-    - name: Аксессуары
+    - name: Accessories
       choices: { CMAccessories: 1 }
       entries:
       - id: CMWebbingBrown

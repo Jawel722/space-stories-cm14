@@ -15,7 +15,7 @@
     jobs:
     - CMFireteamLeader
     sections:
-    - name: Взрывчатка
+    - name: Взрвчатка
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 18
@@ -49,7 +49,7 @@
         points: 10
       - id: CMMagazineRifleM54CExt
         points: 10
-    - name: Боеприпасы к оружию
+    - name: Боеприпасы вторичного оружия
       entries:
       - id: RMCSpeedLoader44Marksman
         points: 10
@@ -73,7 +73,7 @@
     #  points: 30
     - name: Броня
       entries:
-      - id: CMVendorBundleArmorB12
+      - id: CMArmorB12
         points: 30
     - name: Предметы одежды
       entries:
@@ -119,7 +119,7 @@
       entries:
       - id: RMCBinoculars
         points: 5
-    - name: Оптика шлема
+    - name: Оптика для шлема
       entries: [ ]
     #- id: CMMedicalHelmetOptic
     #  points: 15
@@ -151,11 +151,11 @@
     jobs:
     - CMFireteamLeader
     sections:
-    - name: Стандартное снаряжение
+    - name: Стандартное оборудование
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleRiflemanApparel
-      - id: CMVendorBundleArmorM4
+      - id: CMArmorM4
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
       - id: RMCVendorBundleCrewFireteamLeader
@@ -173,20 +173,20 @@
       - id: CMBeltUtilityFilled
         recommended: true
       - id: RMCBeltGrenade
-    - name: Pouches
+    - name: подсумок
       choices: { RMCPouch: 2 }
       entries:
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: подсумок первой помощи (многоразовые инъекторы)
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: подсумок первой помощи (марля, мазь) # TODO RMC14 splints comma
         recommended: true
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: подсумок первой помощи (таблетки)
       - id: RMCPouchFirstResponder
       - id: RMCPouchFlareFilled
-        name: Flare pouch (Full)
+        name: подсумок фаеров (полный)
       #- id: CMFuelTankStrapPouch
       - id: RMCPouchGeneralLarge
       #- id: CMSlingPouch
@@ -197,7 +197,7 @@
       - id: RMCPouchToolsFill
         recommended: true
         name: Tools pouch (Filled)
-    - name: Аксессуары
+    - name: Accessories
       choices: { CMAccessories: 1 }
       entries:
       - id: CMWebbingBlack
