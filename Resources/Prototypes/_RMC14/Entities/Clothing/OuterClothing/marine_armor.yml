@@ -1,4 +1,4 @@
-# m3
+﻿# m3
 - type: entity
   parent: RMCBaseArmor
   id: CMArmorM3Medium
@@ -26,7 +26,6 @@
     enabled: false
     radius: 4
     softness: 5
-    mask: /Textures/Effects/LightMasks/cone_big.png
     autoRot: true
   - type: HandheldLight
     addPrefix: true
@@ -71,6 +70,7 @@
       - CMMagazineSmg
       - CMMagazineSniper
       - CMMagazinePistol
+      - RMCMagazineRevolver
       - Sidearm
       - Knife
       - Flashlight
@@ -125,6 +125,14 @@
     blacklist:
       components:
       - Xeno
+  - type: SquadArmor
+    layer: Armor
+    rsi:
+      sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/armor_overlays.rsi
+      state: std-armor
+    leaderRsi:
+      sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/armor_overlays.rsi
+      state: sql-armor
 
 - type: entity
   parent: CMArmorM3Medium
@@ -164,10 +172,6 @@
   - type: Storage
     grid:
     - 0,0,3,1 # 2 slots
-  - type: Armor
-    modifiers:
-      coefficients:
-        Caustic: 0.5
 
 - type: entity
   parent: CMArmorM3Medium
@@ -262,10 +266,6 @@
   - type: Storage
     grid:
     - 0,0,3,1 # 2 slots
-  - type: Armor
-    modifiers:
-      coefficients:
-        Caustic: 0.75
 
 - type: entity
   parent: CMArmorM3Medium
@@ -348,7 +348,7 @@
 
 # m45
 - type: entity
-  parent: CMArmorM3Light
+  parent: CMArmorM3Medium
   id: CMArmorM45
   name: M45 pattern ghillie armor # TODO RMC14 camo, id lock
   description: A lightweight ghillie camouflage suit, used by Marine snipers on recon missions. Very lightweight and surprisingly very protective.
@@ -463,327 +463,3 @@
       - Bottle
       - Pill
       - PowerCell
-
-# Squad
-
-# M3 Medium
-
-- type: entity
-  parent: CMArmorM3Medium
-  id: CMArmorM3MediumAlpha
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#E6191988"
-
-- type: entity
-  parent: CMArmorM3Medium
-  id: CMArmorM3MediumBravo
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#FFC32D88"
-
-- type: entity
-  parent: CMArmorM3Medium
-  id: CMArmorM3MediumCharlie
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#C864C888"
-
-- type: entity
-  parent: CMArmorM3Medium
-  id: CMArmorM3MediumDelta
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#4148C888"
-
-# M3 Light
-
-- type: entity
-  parent: CMArmorM3Light
-  id: CMArmorM3LightAlpha
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#E6191988"
-
-- type: entity
-  parent: CMArmorM3Light
-  id: CMArmorM3LightBravo
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#FFC32D88"
-
-- type: entity
-  parent: CMArmorM3Light
-  id: CMArmorM3LightCharlie
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#C864C888"
-
-- type: entity
-  parent: CMArmorM3Light
-  id: CMArmorM3LightDelta
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#4148C888"
-
-# M3 Light T
-
-- type: entity
-  parent: RMCArmorM3TDemo
-  id: RMCArmorM3TDemoAlpha
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#E6191988"
-
-- type: entity
-  parent: RMCArmorM3TDemo
-  id: RMCArmorM3TDemoBravo
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#FFC32D88"
-
-- type: entity
-  parent: RMCArmorM3TDemo
-  id: RMCArmorM3TDemoCharlie
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#C864C888"
-
-- type: entity
-  parent: RMCArmorM3TDemo
-  id: RMCArmorM3TDemoDelta
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#4148C888"
-
-# M3 Heavy
-
-- type: entity
-  parent: CMArmorM3Heavy
-  id: CMArmorM3HeavyAlpha
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#E6191988"
-
-- type: entity
-  parent: CMArmorM3Heavy
-  id: CMArmorM3HeavyBravo
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#FFC32D88"
-
-- type: entity
-  parent: CMArmorM3Heavy
-  id: CMArmorM3HeavyCharlie
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#C864C888"
-
-- type: entity
-  parent: CMArmorM3Heavy
-  id: CMArmorM3HeavyDelta
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#4148C888"
-
-# M12
-
-- type: entity
-  parent: CMArmorB12
-  id: CMArmorB12Alpha
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#E6191988"
-
-- type: entity
-  parent: CMArmorB12
-  id: CMArmorB12Bravo
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#FFC32D88"
-
-- type: entity
-  parent: CMArmorB12
-  id: CMArmorB12Charlie
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#C864C888"
-
-- type: entity
-  parent: CMArmorB12
-  id: CMArmorB12Delta
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#4148C888"
-
-# M4
-
-- type: entity
-  parent: CMArmorM4
-  id: CMArmorM4Alpha
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#E6191988"
-
-- type: entity
-  parent: CMArmorM4
-  id: CMArmorM4Bravo
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#FFC32D88"
-
-- type: entity
-  parent: CMArmorM4
-  id: CMArmorM4Charlie
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#C864C888"
-
-- type: entity
-  parent: CMArmorM4
-  id: CMArmorM4Delta
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#4148C888"
-
-# SmartGun
-
-- type: entity
-  parent: CMArmorSmartGunCombatHarness
-  id: CMArmorSmartGunCombatHarnessAlpha
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#E6191988"
-
-- type: entity
-  parent: CMArmorSmartGunCombatHarness
-  id: CMArmorSmartGunCombatHarnessBravo
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#FFC32D88"
-
-- type: entity
-  parent: CMArmorSmartGunCombatHarness
-  id: CMArmorSmartGunCombatHarnessCharlie
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#C864C888"
-
-- type: entity
-  parent: CMArmorSmartGunCombatHarness
-  id: CMArmorSmartGunCombatHarnessDelta
-  components:
-  - type: Clothing
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: color
-        color: "#4148C888"

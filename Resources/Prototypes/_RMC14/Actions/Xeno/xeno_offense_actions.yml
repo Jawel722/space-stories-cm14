@@ -332,7 +332,7 @@
   id: ActionXenoScreech
   parent: ActionXenoBase
   name: Screech (250)
-  description: A wide area of effect stun, screeches upon activation.
+  description: A wide area of effect stun, screeches upon activation. [color=red]This is blocked by solid walls, smoke, and boiler gas, but not windows![/color]
   components:
   - type: InstantAction
     itemIconStyle: NoItem
@@ -457,17 +457,3 @@
     range: 15
     useDelay: 10
     checkCanAccess: false
-
-- type: entity
-  id: ActionXenoDefensiveShield
-  parent: ActionXenoBase
-  name: Master of Defense (50)
-  description: Gain a temporary shield that add 20 armour lasting 7 seconds.
-  components:
-  - type: InstantAction
-    itemIconStyle: NoItem
-    icon:
-      sprite: _RMC14/Actions/xeno_actions.rsi
-      state: empower
-    event: !type:XenoShieldActionEvent
-    useDelay: 38

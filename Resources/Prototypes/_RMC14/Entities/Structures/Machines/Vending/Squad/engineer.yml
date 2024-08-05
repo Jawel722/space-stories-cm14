@@ -27,7 +27,7 @@
     #    CMUA571CSentryGun
     #- id: CMSentryUpgradeKit
     #  points: 15
-    - name: Engineering Supplies
+    - name: Инженерные принадлежности
       entries:
     #- id: CMAirlockCircuitBoard
     #  points: 2
@@ -38,20 +38,27 @@
       - id: RMCPowerCellHigh
         points: 3
       - id: CMSheetMetal10
+        name: metal x10
         points: 5
+        recommended: true
       - id: CMSheetPlasteel10
+        name: plasteel x10
         points: 7
+        recommended: true
     #- id: CMPlasticExplosive
     #  points: 3
       - id: RMCExplosiveBreachingCharge
         points: 5
+        recommended: true
       - id: CMSandbagEmpty25
+        name: мешки с песком x25
         points: 10
+        recommended: true
       - id: RMCPowerCellSuper
         points: 10
     #- id: CMES11MobileFuelCanister
     #  points: 4
-    - name: Взрывчатка
+    - name: Взрвчатка
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 18
@@ -73,7 +80,7 @@
     #  points: 18
     #- id: CMM40MFHSMetalFoamGrenade
     #  points: 5
-    - name: Боеприпасы
+    - name: Ammunition
       entries:
       - id: CMMagazineRifleM4SPRAP
         points: 6
@@ -85,13 +92,21 @@
         points: 6
       - id: CMMagazineRifleM54CExt
         points: 6
+    - name: Боеприпасы вторичного оружия
+      entries:
+      - id: RMCSpeedLoader44Marksman
+        points: 6
+      - id: CMMagazinePistolMK80
+        points: 3
+      - id: RMCMagazinePistolSU6
+        points: 6
     - name: Броня
       entries:
-      - id: CMVendorBundleArmorB12
+      - id: CMArmorB12
         points: 24
-      - id: CMVendorBundleArmorM4
-        points: 30
-    - name: Огнестрельное оружие ограниченного поражения
+      - id: CMArmorM4
+        points: 16
+    - name: Restricted Firearms
       entries:
       - id: RMCMK80Case
         points: 8
@@ -107,7 +122,7 @@
       entries:
     #- id: CMScabbardMacheteFull
     #  points: 6
-      - id: CMPouchMacheteFilled
+      - id: RMCPouchMacheteFilled
         points: 8
     #- id: CMMarineRadioTelephonePack
     #  points: 15
@@ -115,7 +130,7 @@
     #  points: 4
     #- id: CMSlingPouch
     #  points: 6
-      - id: CMPouchGeneralLarge
+      - id: RMCPouchGeneralLarge
         points: 6
       - id: CMBeltUtilityCombat
         points: 15
@@ -139,7 +154,7 @@
     #  points: 10
     #- id: CMLaserDesignator
     #  points: 15
-    - name: Оптика шлема
+    - name: Оптика для шлема
       entries: [ ]
     #- id: CMMedicalHelmetOptic
     #  points: 12
@@ -150,13 +165,10 @@
     - name: Радиоключи
       entries:
       - id: CMEncryptionKeyIntel
-        amount: 3
         points: 3
       - id: CMEncryptionKeyJTAC
-        amount: 3
         points: 3
       - id: CMEncryptionKeyRequisition
-        amount: 3
         points: 3
 
 - type: entity
@@ -174,7 +186,7 @@
     jobs:
     - CMCombatTech
     sections:
-    - name: Стандартное снаряжение
+    - name: Стандартное оборудование
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleCombatTechnicianApparel
@@ -183,21 +195,25 @@
     - name: Броня
       choices: { CMArmor: 1 }
       entries:
-      - id: CMVendorBundleArmorM3Light
+      - id: CMArmorM3Light
         name: лёгкая броня
-      - id: CMVendorBundleArmorM3Medium
+      - id: CMArmorM3Medium
         name: средняя броня
-      - id: CMVendorBundleArmorM3Heavy
-        name: тяжёлая броня
         recommended: true
-    - name: Рюкзак
+      - id: CMArmorM3Heavy
+        name: тяжёлая броня
+    - name: Рюкзаки
+      choices: { CMBackpack: 1 }
       entries:
     #- id: CMScabbardMacheteFull
       - id: CMBackpackMarineTech
       - id: CMSatchelMarineTech
       - id: CMBackpackWelder
+        recommended: true
       - id: RMCSatchelWelder
+        recommended: true
       - id: RMCSatchelWelderChestrig
+        recommended: true
     - name: Пояс
       choices: { CMBelt: 1 }
       entries:
@@ -210,33 +226,39 @@
     #- id: CMM276ShotgunShellLoadingRig
     #- id: CMM276MortarOperatorBelt
       - id: CMBeltUtilityFilled
+        recommended: true
       - id: RMCBeltGrenade
-    - name: Подсумки
-      choices: { CMPouch: 2 }
+    - name: подсумок
+      choices: { RMCPouch: 2 }
       entries:
-      - id: CMPouchConstruction
-      - id: CMPouchFirstAidInjectors
+      - id: RMCPouchConstruction
+        recommended: true
+      - id: RMCPouchFirstAidInjectors
         name: подсумок первой помощи (многоразовые инъекторы)
-      - id: CMPouchFirstAidSplintsGauzeOintment
+        recommended: true
+      - id: RMCPouchFirstAidSplintsGauzeOintment
         name: подсумок первой помощи (марля, мазь) # TODO RMC14 splints comma
-      - id: CMPouchFirstAidPills
+        recommended: true
+      - id: RMCPouchFirstAidPills
         name: подсумок первой помощи (таблетки)
+        recommended: true
       #- id: CMElectronicsPouchFull
-      - id: CMPouchExplosive
-      - id: CMPouchFlareFilled
-        name: подсумок фаеров (заполненный)
-      - id: CMPouchMagazinePistolLarge
-      - id: CMPouchMagazine
-      - id: CMPouchShotgun
-      - id: CMPouchGeneralMedium
-      - id: CMPouchPistol
-      - id: CMPouchToolsFill
+      - id: RMCPouchExplosive
+      - id: RMCPouchFlareFilled
+        name: подсумок фаеров (полный)
+      - id: RMCPouchMagazinePistolLarge
+      - id: RMCPouchMagazine
+      - id: RMCPouchShotgun
+      - id: RMCPouchGeneralMedium
+      - id: RMCPouchPistol
+      - id: RMCPouchToolsFill
         name: Tools pouch (Filled)
-    - name: Аксессуары
+    - name: Accessories
       choices: { CMAccessories: 1 }
       entries:
-      - id: CMWebbingBrown
       - id: CMWebbingBlack
+      - id: CMWebbingBrown
+        recommended: true
       #- id: CMShoulderHolster
       - id: CMWebbing
     #- id: CMDropPouch
