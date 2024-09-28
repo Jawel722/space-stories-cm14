@@ -123,21 +123,6 @@
     checkCanAccess: false
 
 - type: entity
-  parent: ActionXenoLeap
-  id: ActionXenoDash
-  name: Dash (40)
-  description: Dash a short distance towards a given location.
-  components:
-  - type: WorldTargetAction
-    itemIconStyle: NoItem
-    icon:
-      sprite: _RMC14/Actions/xeno_actions.rsi
-      state: prae_dash
-    event: !type:XenoLeapActionEvent
-    useDelay: 11
-    checkCanAccess: false
-
-- type: entity
   id: ActionXenoHeadbutt
   parent: ActionXenoBase
   name: Headbutt (10) # TODO RMC14 proper plasma costs
