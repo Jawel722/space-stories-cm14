@@ -269,6 +269,7 @@
     armorResistsKnockdown: false
   - type: NeurotoxinInjector
     neuroPerSecond: 5
+    injectInContact: false
     affectsDead: false
     affectsInfectedNested: false
     toxinDamage:
