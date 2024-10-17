@@ -31,7 +31,7 @@
   - type: RMCSelectiveFire
     recoilWielded: 1
     scatterWielded: 3
-    baseFireRate: 0.5
+    baseFireRate: 0.3
   - type: WieldDelay
     baseDelay: 1.2
   - type: ItemSlots

@@ -147,13 +147,14 @@
 
 - type: entity
   parent: CMMagazineSniperM96S
-  id: CMMagazineSniperM96SAntiMateriel
+  id: CMMagazineSniperXM43E1AntiMateriel
   name: "XM43E1 marksman magazine (10x99mm)"
   description: A magazine of 10x99mm anti-materiel rounds.
   components:
   - type: Tag
     tags:
     - CMMagazineSniper
+    - CMMagazineSniperXM43E1
   - type: BallisticAmmoProvider
     mayTransfer: True
     whitelist:
@@ -232,10 +233,12 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 50
-        Heat: 10
+        Piercing: 100 # TODO RMC14 50 when aimed shot is in please someone help im dying
+        Heat: 20 # TODO RMC14 10 when aimed shot is in please someone help im dying
   - type: CMArmorPiercing
     amount: 20
+  - type: IgniteOnCollide
+    fireStacks: 3
 
 # TODO RMC14 slow
 - type: entity
@@ -247,9 +250,13 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 55
+        Piercing: 110 # TODO RMC14 55 when aimed shot is in please someone help im dying
   - type: CMArmorPiercing
     amount: 0
+  - type: XenoSlowingSpitProjectile
+    slow: 5
+    slowMultiplier: 0.25
+    paralyze: 0
 
 - type: entity
   parent: CMBulletSniper10x28mm
@@ -260,7 +267,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 125
+        Piercing: 225 # TODO RMC14 130 when aimed shot is in please someone help im dying
+        Structural: 1500
   - type: CMArmorPiercing
     amount: 50
 
@@ -269,6 +277,9 @@
 
 - type: Tag
   id: CMMagazineSniperM96S
+
+- type: Tag
+  id: CMMagazineSniperXM43E1
 
 - type: Tag
   id: CMCartridgeSniper10x28mm

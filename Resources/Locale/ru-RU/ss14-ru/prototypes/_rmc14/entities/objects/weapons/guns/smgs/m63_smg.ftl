@@ -1,5 +1,5 @@
-ent-WeaponSMGM63 = подствольный гранатомёт M63
-    .desc = Подствольный гранатомёт Aegis Battlefield Armaments M63. Иногда используется лёгкой пехотой, разведчиками, инженерами и медиками.
+ent-WeaponSMGM63 = пистолет-пулемёт M63
+    .desc = Пистолет-пулемёт Aegis Battlefield Armaments M63. Иногда используется лёгкой пехотой, разведчиками, инженерами и медиками.
 ent-CMMagazineSMGM63 = магазин M63 (10x20мм)
     .desc = { ent-BaseMagazineRifle.desc }
 ent-CMMagazineSMGM63AP = магазин M63 Бронебойный (10x20мм)

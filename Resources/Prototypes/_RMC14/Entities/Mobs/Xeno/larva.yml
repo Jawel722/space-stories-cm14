@@ -8,17 +8,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-larva
   - type: Sprite
-    layers:
-    - state: alive
-      map: ["movement"]
     sprite: _RMC14/Mobs/Xenonids/Larva/larva.rsi
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: moving
-    noMovementLayers:
-      movement:
-        state: alive
   - type: MobState
     allowedStates:
     - Alive
@@ -65,6 +55,7 @@
         - BarbedBarricade
         layer:
         - SmallMobLayer
+  - type: XenoAnimateMovement
   - type: Flammable
     canResistFire: false
   - type: MovementSpeedModifier
