@@ -44,3 +44,13 @@
   - type: Docking
   - type: DockingSignalControl
 
+- type: entity
+  parent: RMCCargoAirlockAlamo
+  id: RMCCargoAirlockNormandy
+  name: normandy cargo door
+  description: It opens and closes.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Stories/Structures/Doors/normandy_doors.rsi

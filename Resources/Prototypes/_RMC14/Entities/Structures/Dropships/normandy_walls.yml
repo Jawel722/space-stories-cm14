@@ -418,17 +418,6 @@
     state: "40"
   - type: Icon
     state: "40"
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,-0.25"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 1000
   - type: Occluder
     boundingBox: "-0.5,-0.5,0.5,-0.25"
 
@@ -441,17 +430,6 @@
     state: "41"
   - type: Icon
     state: "41"
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,-0.25"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 1000
   - type: Occluder
     boundingBox: "-0.5,-0.5,0.5,-0.25"
 
@@ -484,17 +462,6 @@
     state: "44"
   - type: Icon
     state: "44"
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,-0.25"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 1000
   - type: Occluder
     boundingBox: "-0.5,-0.5,0.5,-0.25"
 
@@ -507,17 +474,6 @@
     state: "45"
   - type: Icon
     state: "45"
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,-0.25"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 1000
   - type: Occluder
     boundingBox: "-0.5,-0.5,0.5,-0.25"
 
@@ -800,17 +756,6 @@
     state: "71"
   - type: Occluder
     enabled: false
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 1000
 
 - type: entity
   parent: [CMBaseNormandyWall, CMAlamoWall72]
@@ -843,17 +788,6 @@
     state: "74"
   - type: Occluder
     enabled: false
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 1000
 
 - type: entity
   parent: [CMBaseNormandyWall, CMAlamoWall75]
@@ -959,17 +893,6 @@
       offset: 0.5, 0.5
   - type: Icon
     state: "84"
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,-0.25"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 1000
   - type: Occluder
     enabled: false
 
@@ -997,17 +920,6 @@
     state: "85"
   - type: Icon
     state: "85"
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,-0.25"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 1000
   - type: Occluder
     enabled: false
 
@@ -1071,17 +983,6 @@
     state: "90"
   - type: Icon
     state: "90"
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,-0.25"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 1000
   - type: Occluder
     enabled: false
 
@@ -1094,17 +995,6 @@
     state: "91"
   - type: Icon
     state: "91"
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,-0.25"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 1000
   - type: Occluder
     enabled: false
 
@@ -1199,17 +1089,6 @@
     state: "100"
   - type: Occluder
     enabled: false
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0,-0.5,0.5,0.1"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 1000
 
 - type: entity
   parent: [CMBaseNormandyWall, CMAlamoWall101]
@@ -1222,17 +1101,6 @@
     state: "101"
   - type: Occluder
     enabled: false
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0.1"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 1000
 
 - type: entity
   parent: [CMBaseNormandyWall, CMAlamoWall102]
@@ -1245,14 +1113,3 @@
     state: "102"
   - type: Occluder
     enabled: false
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0,0.1"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 1000
