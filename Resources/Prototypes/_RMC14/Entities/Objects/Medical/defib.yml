@@ -79,6 +79,7 @@
   components:
   - type: PowerCellDraw
     useRate: 100
+    drawRate: 0
 
 - type: entity
   id: CMDefibrillatorEmpty

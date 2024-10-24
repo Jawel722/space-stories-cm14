@@ -35,6 +35,9 @@
   - type: Tag
     tags:
     - RMCWeaponSMG
+  - type: RMCFireGroup
+    group: Rifles
+    delay: 2
 
 - type: entity
   parent: BaseCartridgeCaselessRifle

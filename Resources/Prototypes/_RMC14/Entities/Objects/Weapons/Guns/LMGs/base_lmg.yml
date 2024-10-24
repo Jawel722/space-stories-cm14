@@ -63,6 +63,9 @@
   - type: Appearance
   - type: RMCNameItemOnVend
     item: PrimaryGun
+  - type: RMCFireGroup
+    group: Rifles
+    delay: 2
 
 - type: entity
   parent: BaseMagazineRifle
