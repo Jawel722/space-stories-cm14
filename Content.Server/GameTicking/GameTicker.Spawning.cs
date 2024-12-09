@@ -312,8 +312,8 @@ namespace Content.Server.GameTicking
             // Stories-AntiGrief
             var playtime = _playtimeManager.GetPlayTimes(player);
 
-            if (!playtime.TryGetValue("CMJobRifleman", out TimeSpan time) ||
-                time < TimeSpan.FromHours(1))
+            if (!playtime.TryGetValue(PlayTimeTrackingShared.TrackerOverall, out TimeSpan time) ||
+                time < TimeSpan.FromHours(2))
             {
                 EntityManager.AddComponent<CadetComponent>(mob);
             }
