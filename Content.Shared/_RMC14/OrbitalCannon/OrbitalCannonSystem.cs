@@ -654,11 +654,12 @@ public sealed class OrbitalCannonSystem : EntitySystem
                 var cannonEnt = new Entity<OrbitalCannonComponent>(cannon, cannon.Comp);
                 CannonStatusChanged(cannonEnt);
 
-                if (_container.TryGetContainer(cannon, cannon.Comp.FuelContainer, out var fuelCont))
+                if (_container.TryGetContainer(trayId, tray.FuelContainer, out var fuelCont))
                     _container.CleanContainer(fuelCont);
 
-                if (_container.TryGetContainer(cannon, cannon.Comp.WarheadContainer, out var warheadCont))
+                if (_container.TryGetContainer(trayId, tray.WarheadContainer, out var warheadCont))
                     _container.CleanContainer(warheadCont);
+                
                 return false;
             }
 
