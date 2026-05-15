@@ -5,6 +5,9 @@ using Content.Shared.FixedPoint;
 using Content.Shared.Projectiles;
 using Content.Shared.Weapons.Ranged.Components;
 using Robust.Shared.Prototypes;
+// Stories-CartridgeArmorExamine-Start
+using Content.Shared._RMC14.Armor;
+// Stories-CartridgeArmorExamine-End
 
 namespace Content.Server.Weapons.Ranged.Systems;
 
@@ -25,7 +28,33 @@ public sealed partial class GunSystem
             return;
 
         _damageExamine.AddDamageExamine(args.Message, Damageable.ApplyUniversalAllModifiers(damageSpec), Loc.GetString("damage-projectile"));
+
+        // Stories-CartridgeArmorExamine-Start
+        var armorPen = GetProjectileArmorPenetration(component.Prototype);
+        if (armorPen > 0)
+        {
+            args.Message.PushNewline();
+            args.Message.AddMarkupOrThrow(Loc.GetString("stories-gun-cartridge-armor-penetration", ("value", armorPen)));
+        }
+        // Stories-CartridgeArmorExamine-End
     }
+
+    // Stories-CartridgeArmorExamine-Start
+    private int GetProjectileArmorPenetration(string proto)
+    {
+        if (!ProtoManager.TryIndex<EntityPrototype>(proto, out var entityProto))
+            return 0;
+
+        if (entityProto.Components
+            .TryGetValue(Factory.GetComponentName<CMArmorPiercingComponent>(), out var armorPiercing))
+        {
+            var ap = (CMArmorPiercingComponent) armorPiercing.Component;
+            return ap.Amount;
+        }
+
+        return 0;
+    }
+    // Stories-CartridgeArmorExamine-End
 
     private DamageSpecifier? GetProjectileDamage(string proto)
     {
