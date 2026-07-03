@@ -6,6 +6,7 @@ using Content.Shared._RMC14.Emote;
 using Content.Shared._RMC14.Explosion;
 using Content.Shared._RMC14.Map;
 using Content.Shared._RMC14.OnCollide;
+using Content.Shared._RMC14.Vehicle;
 using Content.Shared._RMC14.Weapons.Melee;
 using Content.Shared._RMC14.Xenonids.Plasma;
 using Content.Shared.Alert;
@@ -826,6 +827,12 @@ public abstract class SharedRMCFlammableSystem : EntitySystem
         if (!HasComp<DamageableComponent>(other))
             return;
 
+        if (_tileFireQuery.HasComp(ent.Owner) && ShouldIgnoreTileFire(other))
+        {
+            RemCompDeferred<SteppingOnFireComponent>(other);
+            return;
+        }
+
         EnsureComp<SteppingOnFireComponent>(other);
         var flammableEnt = new Entity<FlammableComponent?>(other, null);
         if (!Resolve(flammableEnt, ref flammableEnt.Comp, false))
@@ -1017,7 +1024,7 @@ public abstract class SharedRMCFlammableSystem : EntitySystem
                     TryIgnite((uid, apply), contact, true);
                 }
 
-                RemCompDeferred<DamageOnCollideComponent>(uid);
+                _onCollide.DisableDamageOnCollide(uid);
             }
         }
         catch (Exception e)

@@ -23,8 +23,6 @@ public sealed partial class VehicleSupplyEntryState
 
     [DataField]
     public int Count;
-    public bool LockedByPop;
-    public bool IsPurchasable; // Stories-Vehicle
 
     public VehicleSupplyEntryState()
     {
@@ -32,13 +30,11 @@ public sealed partial class VehicleSupplyEntryState
         Name = string.Empty;
     }
 
-    public VehicleSupplyEntryState(string id, string name, int count, bool lockedByPop, bool isPurchasable)
+    public VehicleSupplyEntryState(string id, string name, int count)
     {
         Id = id;
         Name = name;
         Count = count;
-        LockedByPop = lockedByPop;
-        IsPurchasable = isPurchasable; // Stories-Vehicle
     }
 }
 
@@ -200,16 +196,5 @@ public sealed class VehicleSupplyLiftMsg : BoundUserInterfaceMessage
     public VehicleSupplyLiftMsg(bool raise)
     {
         Raise = raise;
-    }
-}
-
-[Serializable, NetSerializable]
-public sealed class VehicleSupplyPurchaseMsg : BoundUserInterfaceMessage
-{
-    public string VehicleId;
-
-    public VehicleSupplyPurchaseMsg(string vehicleId)
-    {
-        VehicleId = vehicleId;
     }
 }

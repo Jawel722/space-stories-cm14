@@ -95,7 +95,7 @@ public sealed partial class VehicleTurretComponent : Component
     public float MaxShotCurvatureDegrees = 0f;
 
     [DataField, AutoNetworkedField]
-    public bool StabilizedRotation = false;
+    public bool StabilizedRotation = true;
 
     [DataField, AutoNetworkedField]
     public float RotationSpeed = 0f;
@@ -120,6 +120,9 @@ public sealed partial class VehicleTurretComponent : Component
 
     [DataField, AutoNetworkedField]
     public string OverlayState = string.Empty;
+
+    [DataField, AutoNetworkedField]
+    public string OverlayDamagedState = string.Empty;
 
     [DataField, AutoNetworkedField]
     public bool UseDirectionalOffsets = false;
@@ -156,4 +159,10 @@ public sealed partial class VehicleTurretComponent : Component
 
     [NonSerialized]
     public int LastAppliedDirectionSign = 0;
+
+    [AutoNetworkedField]
+    public Angle LastVehicleRotation;
+
+    [AutoNetworkedField]
+    public bool LastVehicleRotationValid;
 }
