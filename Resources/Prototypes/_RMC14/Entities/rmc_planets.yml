@@ -254,10 +254,12 @@
     #smallHostVariants:
       #RMCMobSmallHostFarwa
     nightmareScenarios:
-    - scenarioName: riot_in_progress
-      scenarioProbability: 0.15
+    # Stories-DisableFiorinaRiot-Start
+    #- scenarioName: riot_in_progress
+    #  scenarioProbability: 0.15
     - scenarioName: none
-      scenarioProbability: 0.85
+      scenarioProbability: 1
+    # Stories-DisableFiorinaRiot-End
     survivorJobVariants:
       CMSurvivor:
       - CMSurvivor: -1
