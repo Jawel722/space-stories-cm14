@@ -66,7 +66,7 @@ public abstract partial class SharedXenoParasiteSystem : EntitySystem
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly RMCHandsSystem _rmcHands = default!;
-    [Dependency] private readonly SharedRMCSpriteSystem _rmcSprite = default!;
+    // [Dependency] private readonly SharedRMCSpriteSystem _rmcSprite = default!; // Stories-ParasiteStealthLeap
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly INetManager _net = default!;
@@ -84,7 +84,7 @@ public abstract partial class SharedXenoParasiteSystem : EntitySystem
     [Dependency] private readonly TagSystem _tagSystem = default!;
     [Dependency] private readonly RMCSizeStunSystem _size = default!;
     [Dependency] private readonly RMCUnrevivableSystem _unrevivable = default!;
-    [Dependency] private readonly SharedRMCActionsSystem _rmcActions = default!;
+    // [Dependency] private readonly SharedRMCActionsSystem _rmcActions = default!; // Stories-ParasiteStealthLeap
 
     private const CollisionGroup LeapCollisionGroup = CollisionGroup.InteractImpassable;
     private const CollisionGroup ThrownCollisionGroup = CollisionGroup.InteractImpassable | CollisionGroup.BarricadeImpassable;
@@ -283,35 +283,39 @@ public abstract partial class SharedXenoParasiteSystem : EntitySystem
 
     private void OnParasiteLeap(Entity<XenoParasiteComponent> ent, ref XenoLeapActionEvent args)
     {
-        _tagSystem.AddTag(ent, ParasiteIsPreparingLeapProtoID);
-        _rmcSprite.UpdateDrawDepth(ent);
-
-        if (TryComp<XenoHideComponent>(ent, out var xenoHideComp) &&
-            xenoHideComp.Hiding)
-        {
-            var ev = new XenoHideActionEvent();
-            ev.Performer = ent;
-            ev.Toggle = false;
-            RaiseLocalEvent(ent, ev);
-
-            foreach (var action in _rmcActions.GetActionsWithEvent<XenoHideActionEvent>(ent))
-            {
-                _action.SetEnabled(action.AsNullable(), false);
-            }
-        }
+        // Stories-ParasiteStealthLeap-Start
+        // _tagSystem.AddTag(ent, ParasiteIsPreparingLeapProtoID);
+        // _rmcSprite.UpdateDrawDepth(ent);
+        //
+        // if (TryComp<XenoHideComponent>(ent, out var xenoHideComp) &&
+        //     xenoHideComp.Hiding)
+        // {
+        //     var ev = new XenoHideActionEvent();
+        //     ev.Performer = ent;
+        //     ev.Toggle = false;
+        //     RaiseLocalEvent(ent, ev);
+        //
+        //     foreach (var action in _rmcActions.GetActionsWithEvent<XenoHideActionEvent>(ent))
+        //     {
+        //         _action.SetEnabled(action.AsNullable(), false);
+        //     }
+        // }
+        // Stories-ParasiteStealthLeap-End
     }
 
     private void OnParasiteLeapAttempt(Entity<XenoParasiteComponent> ent, ref XenoLeapAttemptEvent args)
     {
         if (args.Cancelled)
         {
-            _tagSystem.RemoveTag(ent, ParasiteIsPreparingLeapProtoID);
-            _rmcSprite.UpdateDrawDepth(ent);
-
-            foreach (var action in _rmcActions.GetActionsWithEvent<XenoHideActionEvent>(ent))
-            {
-                _action.SetEnabled(action.AsNullable(), false);
-            }
+            // Stories-ParasiteStealthLeap-Start
+            // _tagSystem.RemoveTag(ent, ParasiteIsPreparingLeapProtoID);
+            // _rmcSprite.UpdateDrawDepth(ent);
+            //
+            // foreach (var action in _rmcActions.GetActionsWithEvent<XenoHideActionEvent>(ent))
+            // {
+            //     _action.SetEnabled(action.AsNullable(), false);
+            // }
+            // Stories-ParasiteStealthLeap-End
             return;
         }
 
@@ -330,13 +334,15 @@ public abstract partial class SharedXenoParasiteSystem : EntitySystem
 
     private void OnParasiteLeapDoAfter(Entity<XenoParasiteComponent> ent, ref XenoLeapDoAfterEvent args)
     {
-        _tagSystem.RemoveTag(ent, ParasiteIsPreparingLeapProtoID);
-        _rmcSprite.UpdateDrawDepth(ent);
-
-        foreach (var action in _rmcActions.GetActionsWithEvent<XenoHideActionEvent>(ent))
-        {
-            _action.SetEnabled(action.AsNullable(), true);
-        }
+        // Stories-ParasiteStealthLeap-Start
+        // _tagSystem.RemoveTag(ent, ParasiteIsPreparingLeapProtoID);
+        // _rmcSprite.UpdateDrawDepth(ent);
+        //
+        // foreach (var action in _rmcActions.GetActionsWithEvent<XenoHideActionEvent>(ent))
+        // {
+        //     _action.SetEnabled(action.AsNullable(), true);
+        // }
+        // Stories-ParasiteStealthLeap-End
 
         if (args.Cancelled)
             return;
