@@ -159,7 +159,10 @@ public sealed class XenoLeapSystem : EntitySystem
         {
             BreakOnMove = true,
             BreakOnDamage = true,
-            DamageThreshold = FixedPoint2.New(10)
+            // Stories-ParasiteStealthLeap-Start
+            DamageThreshold = FixedPoint2.New(10),
+            Hidden = true,
+            // Stories-ParasiteStealthLeap-End
         };
 
         _doAfter.TryStartDoAfter(doAfter);
