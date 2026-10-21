@@ -4,5 +4,5 @@ ent-RMCSynthGenTwo = Второе поколение
     .desc = { "" }
 ent-RMCSynthGenThree = Третье поколение
     .desc = { "" }
-ent-RMCSynthWhiteout = Секретная программа
+ent-RMCSynthWhiteout = Засекреченная программа
     .desc = { "" }
