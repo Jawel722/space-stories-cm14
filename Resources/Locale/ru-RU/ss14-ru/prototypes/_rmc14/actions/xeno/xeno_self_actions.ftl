@@ -1,7 +1,7 @@
 ent-ActionXenoRest = Отдых
-    .desc = Прилягте, чтобы быстрее восстанавливать здоровье и плазму, находясь на траве.
+    .desc = Прилягте, чтобы быстрее восстанавливать здоровье и плазму, находясь на смоле. [color=red]Клавиша отдыха тоже активирует это действие, по умолчанию Shift+R.[/color]
 ent-RMCGuidebookActionXenoRest = Отдых
-    .desc = Прилягте, чтобы быстрее восстанавливать здоровье и плазму, находясь на сорняках.
+    .desc = Прилягте, чтобы быстрее восстанавливать здоровье и плазму, находясь на смоле. [color=red]Клавиша отдыха тоже активирует это действие, по умолчанию Shift+R.[/color]
 ent-ActionXenoWatch = Наблюдать за ксеноморфом
     .desc = { ent-ActionXenoBase.desc }
 ent-RMCGuidebookActionXenoWatch = Наблюдать за ксеноморфом
@@ -30,7 +30,7 @@ ent-RMCGuidebookActionXenoResinWalker = { ent-CMGuidebookActionXenoBase }
     .desc = { ent-CMGuidebookActionXenoBase.desc }
 ent-ActionXenoZoom = Переключить дальний прицел
     .desc = { ent-ActionXenoBase.desc }
-ent-ActionXenoTrapperZoom = Включить/выключить прицел дальнего действия
+ent-ActionXenoTrapperZoom = Переключить дальний прицел
     .desc = { ent-ActionXenoBase.desc }
 ent-RMCGuidebookActionXenoToggleLongRangeSight = { ent-CMGuidebookActionXenoBase }
     .desc = { ent-CMGuidebookActionXenoBase.desc }
