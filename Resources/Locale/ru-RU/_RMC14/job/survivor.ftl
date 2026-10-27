@@ -169,7 +169,7 @@ rmc-job-name-survivor-varadero-chaplain = Базовый капеллан
 rmc-job-prefix-survivor-varadero-chaplain = КМП США КАП
 
 rmc-job-name-survivor-varadero-un-asst-rep = Помощник представителя США
-rmc-job-prefix-survivor-varadero-un-asst-rep = UN AST REP
+rmc-job-prefix-survivor-varadero-un-asst-rep = США ПОМ ПРЕД
 
 rmc-job-name-survivor-varadero-firefighter = Аэродромный пожарный
 rmc-job-prefix-survivor-varadero-firefighter = КМП США АЭПОЖ
@@ -184,16 +184,16 @@ rmc-job-name-survivor-medical-technician = Фельдшер
 rmc-job-prefix-survivor-medical-technician = КМП США МЕДТЕХ
 
 rmc-job-name-survivor-new-varadero-researcher = Исследователь Нью-Варадеро
-rmc-job-prefix-survivor-new-varadero-researcher = WY RSR
+rmc-job-prefix-survivor-new-varadero-researcher = Ве-Я ИССЛ
 
 rmc-job-name-survivor-new-varadero-xenoarchaeologist = Ксеноархеолог Нью-Варадеро
-rmc-job-prefix-survivor-new-varadero-xenoarchaeologist = WY XARC
+rmc-job-prefix-survivor-new-varadero-xenoarchaeologist = Ве-Я КСАРХ
 
 rmc-job-name-survivor-new-varadero-xenobiologist = Ксенобиолог Нью-Варадеро
-rmc-job-prefix-survivor-new-varadero-xenobiologist = WY XBIO
+rmc-job-prefix-survivor-new-varadero-xenobiologist = Ве-Я КСБИО
 
 rmc-job-name-survivor-new-varadero-rd = Научный руководитель Нью-Варадеро
-rmc-job-prefix-survivor-new-varadero-rd = WY RD
+rmc-job-prefix-survivor-new-varadero-rd = Ве-Я НР
 
 rmc-job-name-survivor-varadero-base-police = Миротворец
 
@@ -210,7 +210,7 @@ rmc-job-name-survivor-material-reprocessing-technician = Гражданский 
 rmc-job-name-survivor-fire-protection-specialist-hybrisa = Гражданский — Специалист по противопожарной защите
 rmc-job-prefix-fire-protection-specialist-hybrisa = СППЗ
 
-rmc-job-name-survivor-grind-barista = Гражданский — Бариста The Daily Grind
+rmc-job-name-survivor-grind-barista = Гражданский — Бариста Дейли Грайнд
 
 rmc-job-name-survivor-tmcc-miner = TMCC — Шахтёр
 
@@ -282,7 +282,7 @@ rmc-job-prefix-fire-protection-specialist = СППБ
 
 rmc-job-name-survivor-soro-miner = Jùtóu Combine — Шахтёр
 
-rmc-job-name-survivor-halcyon-dynamics-liaison = Halcyon Dynamics — Представитель корпорации
+rmc-job-name-survivor-halcyon-dynamics-liaison = Халькон Дайнемикс — Представитель корпорации
 
 # Sorokyne SOF insert survs
 
@@ -313,8 +313,8 @@ rmc-job-prefix-soro-sof-spec = 121/РАЗВЕД СПЦ
 rmc-job-name-soro-sof-soldier = Боец ССО
 rmc-job-prefix-soro-sof-soldier = 121/РАЗВЕД БЦ
 
-rmc-job-name-soro-sof-synth = SOF Support Synthetic
-rmc-job-prefix-soro-sof-synth = 121/RECON SYN
+rmc-job-name-soro-sof-synth = Синтетик поддержки ССО
+rmc-job-prefix-soro-sof-synth = 121/РАЗВЕД СИН
 
 # Trijent survs
 
@@ -364,8 +364,8 @@ rmc-job-prefix-crashland-spec = 173/РАЗВЕД СПЦ
 rmc-job-name-crashland-soldier = Боец ВДВ
 rmc-job-prefix-crashland-soldier = 173/РАЗВЕД БЦ
 
-rmc-job-name-crashland-synth = Airborne Support Synthetic
-rmc-job-prefix-crashland-synth = 173/RECON SYN
+rmc-job-name-crashland-synth = Синтетик поддержки ВДВ
+rmc-job-prefix-crashland-synth = 173/РАЗВЕД СИН
 
 # Fiorina Science Annex Survs
 
@@ -385,56 +385,56 @@ cm-job-name-survivor-riot-officer = Офицер СА по борьбе с бе�
 CMSurvivorFiorinaRiotOfficer = Офицер СА по борьбе с беспорядками
 cm-job-prefix-survivor-riot-officer = СА ОБ
 
-rmc-job-name-survivor-riot-TL = CMB Riot Control Team Leader
-rmc-job-prefix-survivor-riot-TL = CMB RCTL
+rmc-job-name-survivor-riot-TL = Руководитель группы по борьбе с беспорядками БКМ
+rmc-job-prefix-survivor-riot-TL = РГББ БКМ
 
-cm-job-name-survivor-fiorina-cmb-synth = CMB Support Synthetic
-cm-job-prefix-survivor-fiorina-cmb-synth = CMB Syn
+cm-job-name-survivor-fiorina-cmb-synth = Синтетик поддержки БКМ
+cm-job-prefix-survivor-fiorina-cmb-synth = БКМ СИН
 
-cm-job-name-survivor-fiorina-cmb-riot-control-synth = CMB Riot Control Synthetic
-cm-job-prefix-survivor-fiorina-cmb-riot-control-synth = CMB RC Syn
+cm-job-name-survivor-fiorina-cmb-riot-control-synth = Синтетик группы по борьбе с беспорядками БКМ
+cm-job-prefix-survivor-fiorina-cmb-riot-control-synth = БКМ ГББ СИН
 
 CMSurvivorFiorinaPrisonGuard = Корпоративная охрана Ве-Я
 
-rmc-job-greeting-riot-in-progress-CMB-TL = You are a CMB Riot Control Team Leader!
+rmc-job-greeting-riot-in-progress-CMB-TL = Вы — руководитель группы по борьбе с беспорядками БКМ!
 
-  You are aware of the xenonid threat.
+  Вы осведомлены об угрозе ксеноморфов.
 
-  Your primary objective is to survive the outbreak.
+  Ваша главная цель — выжить.
 
-  You are a CMB Riot Control Team Leader, running a team as part of the Riot Control Unit of the Colony Marshal Bureau. Your dispatcher received a distress signal from the infamous Fiorina Orbital Penitentiary. You figured it was just another typical case of the prison dealing with a riot their understaffed security force couldn't handle, with more and more of its personnel getting dispatched elsewhere in the galaxy. This wasn't the first time your team was called in to assist, but unfortunately for you, this time it also wasn't the 'minor riot' you expected it to be. Loaded up with only beanbags and finding nobody to greet you on the LZ after being dropped off, you led your team towards the armory to speak to the Quartermaster, but only found corpses of both prisoners and security littered around on the way. Worried about armed prisoners, your team was in the process of switching to lethals in the armory when some sort of huge alien jumped out from the shadows and snatched Jerry away while he was off praying. The thing dragged him off too fast to catch and his screams faded away down the halls, poor bastard. Now, you'll need to decide whether to look for more clues about what the hell happened here, hunt whatever's out there, or hold a position and hope someone else will respond to the distress signal before it's too late...
+  Вы — руководитель группы в подразделении по борьбе с беспорядками Бюро колониальных маршалов. Ваш диспетчер получил сигнал бедствия из печально известной Орбитальной тюрьмы «Фиорина». Вы решили, что это очередной типичный случай: тюрьма не справляется с бунтом силами своей малочисленной охраны, ведь всё больше её персонала отправляют в другие уголки галактики. Вашу группу вызывали на помощь уже не в первый раз. К сожалению для вас, на этот раз это оказался вовсе не тот «небольшой бунт», которого вы ожидали. Вооружённые одними травматическими патронами и никого не встретив в ЗП после высадки, вы повели свою группу к оружейной, чтобы поговорить с квартирмейстером, но по пути находили лишь трупы заключённых и охраны. Опасаясь вооружённых заключённых, ваша группа уже меняла боеприпасы на летальные в оружейной, когда из тени выпрыгнуло какое-то огромное чудовище и утащило Джерри, отошедшего помолиться. Тварь уволокла его слишком быстро, чтобы успеть его догнать, а его крики затихли где-то в коридорах. Бедолага. Теперь вам предстоит решить: искать новые улики о том, что, чёрт возьми, здесь произошло, охотиться на то, что бродит снаружи, или удерживать позицию в надежде, что кто-то ещё откликнется на сигнал бедствия, пока не стало слишком поздно...
 
-  You are [bold][color=#51A16C][font size=16]NON-HOSTILE to the КМП США![/font][/color][/bold]
+  Вы [bold][color=#51A16C][font size=16]НЕ ВРАЖДЕБНЫ к КМП США![/font][/color][/bold]
 
-rmc-job-greeting-riot-in-progress-CMB = You are a CMB Riot Control Officer!
+rmc-job-greeting-riot-in-progress-CMB = Вы — офицер группы по борьбе с беспорядками БКМ!
 
-  You are aware of the xenonid threat.
+  Вы осведомлены об угрозе ксеноморфов.
 
-  Your primary objective is to survive the outbreak.
+  Ваша главная цель — выжить.
 
-  You are a CMB Riot Control Officer, a part of the Riot Control Unit of the Colony Marshal Bureau. Your team leader briefed you on a distress signal coming in from the infamous Fiorina Orbital Penitentiary, probably another minor riot going sour fast. The prison was an understaffed mess so you weren't too surprised they had sent out a distress signal, calling you in to do their jobs yet again. Unfortunately for you, this time it also wasn't the 'minor riot' you expected it to be. Loaded up with only beanbags and finding nobody to greet you on the LZ after being dropped off, you and the rest of your team had gone towards the armory to speak to the Quartermaster, but only found corpses of both prisoners and security littered around on the way. Worried about armed prisoners, your team was in the process of switching to lethals in the armory when some sort of huge alien jumped out from the shadows and snatched Jerry away while he was off praying. The thing dragged him off too fast to catch and his screams faded away down the halls, poor bastard. Now, you'll need to decide whether to look for more clues about what the hell happened here, hunt whatever's out there, or hold a position and hope someone else will respond to the distress signal before it's too late...
+  Вы — офицер подразделения по борьбе с беспорядками Бюро колониальных маршалов. Командир группы проинструктировал вас о сигнале бедствия, поступившем из печально известной Орбитальной тюрьмы «Фиорина», — скорее всего, очередной небольшой бунт, который быстро вышел из-под контроля. Тюрьма страдала от нехватки персонала, так что вы не особо удивились, что они подали сигнал бедствия и снова вызвали вас делать их работу. К сожалению для вас, на этот раз это оказался вовсе не тот «небольшой бунт», которого вы ожидали. Вооружённые одними травматическими патронами и никого не встретив в ЗП после высадки, вы с остальной группой направились к оружейной, чтобы поговорить с квартирмейстером, но по пути находили лишь трупы заключённых и охраны. Опасаясь вооружённых заключённых, ваша группа уже меняла боеприпасы на летальные в оружейной, когда из тени выпрыгнуло какое-то огромное чудовище и утащило Джерри, отошедшего помолиться. Тварь уволокла его слишком быстро, чтобы успеть его догнать, а его крики затихли где-то в коридорах. Бедолага. Теперь вам предстоит решить: искать новые улики о том, что, чёрт возьми, здесь произошло, охотиться на то, что бродит снаружи, или удерживать позицию в надежде, что кто-то ещё откликнется на сигнал бедствия, пока не стало слишком поздно...
 
-  You are [bold][color=#51A16C][font size=16]NON-HOSTILE to the КМП США![/font][/color][/bold]
+  Вы [bold][color=#51A16C][font size=16]НЕ ВРАЖДЕБНЫ к КМП США![/font][/color][/bold]
 
-rmc-job-greeting-riot-in-progress-CMB-synth = You are a CMB Support Synthetic!
+rmc-job-greeting-riot-in-progress-CMB-synth = Вы — синтетик поддержки БКМ!
 
-  You are aware of the xenonid threat.
+  Вы осведомлены об угрозе ксеноморфов.
 
-  Your primary objective is to survive the outbreak.
+  Ваша главная цель — выжить.
 
-  You are a CMB Support Synthetic attached to a Riot Control Unit of the Colony Marshal Bureau. Your team leader briefed you on a distress signal coming in from the infamous Fiorina Orbital Penitentiary, probably another minor riot going sour fast. The prison was an understaffed mess so you weren't too surprised they had sent out a distress signal, calling you in to do their jobs yet again. Unfortunately for you, this time it also wasn't the 'minor riot' you expected it to be. Loaded up with only beanbags and finding nobody to greet you on the LZ after being dropped off, you and the rest of your team had gone towards the armory to speak to the Quartermaster, but only found corpses of both prisoners and security littered around on the way. Worried about armed prisoners, your team was in the process of switching to lethals in the armory when some sort of huge alien jumped out from the shadows and snatched Jerry away while he was off praying. The thing dragged him off too fast to catch and his screams faded away down the halls, poor bastard. Now, you'll need to decide whether to look for more clues about what the hell happened here, hunt whatever's out there, or hold a position and hope someone else will respond to the distress signal before it's too late...
+  Вы — синтетик поддержки, приписанный к подразделению по борьбе с беспорядками Бюро колониальных маршалов. Командир группы проинструктировал вас о сигнале бедствия, поступившем из печально известной Орбитальной тюрьмы «Фиорина», — скорее всего, очередной небольшой бунт, который быстро вышел из-под контроля. Тюрьма страдала от нехватки персонала, так что вы не особо удивились, что они подали сигнал бедствия и снова вызвали вас делать их работу. К сожалению для вас, на этот раз это оказался вовсе не тот «небольшой бунт», которого вы ожидали. Вооружённые одними травматическими патронами и никого не встретив в ЗП после высадки, вы с остальной группой направились к оружейной, чтобы поговорить с квартирмейстером, но по пути находили лишь трупы заключённых и охраны. Опасаясь вооружённых заключённых, ваша группа уже меняла боеприпасы на летальные в оружейной, когда из тени выпрыгнуло какое-то огромное чудовище и утащило Джерри, отошедшего помолиться. Тварь уволокла его слишком быстро, чтобы успеть его догнать, а его крики затихли где-то в коридорах. Бедолага. Теперь вам предстоит решить: искать новые улики о том, что, чёрт возьми, здесь произошло, охотиться на то, что бродит снаружи, или удерживать позицию в надежде, что кто-то ещё откликнется на сигнал бедствия, пока не стало слишком поздно...
 
-  You are [bold][color=#51A16C][font size=16]NON-HOSTILE to the КМП США![/font][/color][/bold]
+  Вы [bold][color=#51A16C][font size=16]НЕ ВРАЖДЕБНЫ к КМП США![/font][/color][/bold]
 
-rmc-job-greeting-riot-in-progress-CMB-riot-synth = You are a CMB Riot Control Synthetic!
+rmc-job-greeting-riot-in-progress-CMB-riot-synth = Вы — синтетик группы по борьбе с беспорядками БКМ!
 
-  You are aware of the xenonid threat.
+  Вы осведомлены об угрозе ксеноморфов.
 
-  Your primary objective is to survive the outbreak.
+  Ваша главная цель — выжить.
 
-  You are a CMB Riot Control Synthetic, a part of the Riot Control Unit of the Colony Marshal Bureau. Your team leader briefed you on a distress signal coming in from the infamous Fiorina Orbital Penitentiary, probably another minor riot going sour fast. The prison was an understaffed mess so you weren't too surprised they had sent out a distress signal, calling you in to do their jobs yet again. Unfortunately for you, this time it also wasn't the 'minor riot' you expected it to be. Loaded up with only beanbags and finding nobody to greet you on the LZ after being dropped off, you and the rest of your team had gone towards the armory to speak to the Quartermaster, but only found corpses of both prisoners and security littered around on the way. Worried about armed prisoners, your team was in the process of switching to lethals in the armory when some sort of huge alien jumped out from the shadows and snatched Jerry away while he was off praying. The thing dragged him off too fast to catch and his screams faded away down the halls, poor bastard. Now, you'll need to decide whether to look for more clues about what the hell happened here, hunt whatever's out there, or hold a position and hope someone else will respond to the distress signal before it's too late...
+  Вы — синтетик подразделения по борьбе с беспорядками Бюро колониальных маршалов. Командир группы проинструктировал вас о сигнале бедствия, поступившем из печально известной Орбитальной тюрьмы «Фиорина», — скорее всего, очередной небольшой бунт, который быстро вышел из-под контроля. Тюрьма страдала от нехватки персонала, так что вы не особо удивились, что они подали сигнал бедствия и снова вызвали вас делать их работу. К сожалению для вас, на этот раз это оказался вовсе не тот «небольшой бунт», которого вы ожидали. Вооружённые одними травматическими патронами и никого не встретив в ЗП после высадки, вы с остальной группой направились к оружейной, чтобы поговорить с квартирмейстером, но по пути находили лишь трупы заключённых и охраны. Опасаясь вооружённых заключённых, ваша группа уже меняла боеприпасы на летальные в оружейной, когда из тени выпрыгнуло какое-то огромное чудовище и утащило Джерри, отошедшего помолиться. Тварь уволокла его слишком быстро, чтобы успеть его догнать, а его крики затихли где-то в коридорах. Бедолага. Теперь вам предстоит решить: искать новые улики о том, что, чёрт возьми, здесь произошло, охотиться на то, что бродит снаружи, или удерживать позицию в надежде, что кто-то ещё откликнется на сигнал бедствия, пока не стало слишком поздно...
 
-  You are [bold][color=#51A16C][font size=16]NON-HOSTILE to the UNMC![/font][/color][/bold]
+  Вы [bold][color=#51A16C][font size=16]НЕ ВРАЖДЕБНЫ к КМП США![/font][/color][/bold]
 
 # Kutjevo Refinery Survs
 
@@ -593,37 +593,37 @@ rmc-job-greeting-shivas-panic-room-engineer = Вы — инженер в кол�
 
 # Tyrargo Rift survs
 
-rmc-job-greeting-tyrargo = You are a КМП США Marine. What began as a training exercise on this planet turned into a nightmare, the unexpected arrival of a massive xenonid hive has turned this world into a warzone. You and your battalion have been tasked to defend the city of Tyrargo Rift to give time for the tens of thousands of civilians to be evacuated to a safe zone. It's been two weeks since the siege of the city began. The last few thousand civilians are held up at the museum evacuation site. You and your squad have been holding this trench line by yourselves for the last week, but your ammo is almost gone and the bugs are making the largest push soon. It's time to prepare for the final fight.
+rmc-job-greeting-tyrargo = Вы — морпех КМП США. То, что начиналось как учения на этой планете, превратилось в кошмар: неожиданное появление огромного улья ксеноморфов сделало этот мир зоной боевых действий. Вам и вашему батальону поручено оборонять город Тирарго-Рифт, чтобы дать время эвакуировать десятки тысяч мирных жителей в безопасную зону. С начала осады города прошло две недели. Последние несколько тысяч мирных жителей укрываются в пункте эвакуации у музея. Последнюю неделю вы со своим отделением в одиночку удерживаете эту линию окопов, но патроны почти закончились, а жуки вот-вот пойдут в самый мощный натиск. Пора готовиться к последнему бою.
 
-  You are fully aware of the xenonid threat and are able to use this knowledge as you see fit.
+  Вы полностью осведомлены об угрозе ксеноморфов и вольны использовать эти знания по своему усмотрению.
 
-  You are NOT aware of the marines or their intentions.
+  Вы НЕ знаете о морпехах и их намерениях.
 
-  You are [bold][color=#51A16C][font size=16]NON-HOSTILE to the КМП США![/font][/color][/bold]
+  Вы [bold][color=#51A16C][font size=16]НЕ ВРАЖДЕБНЫ к КМП США![/font][/color][/bold]
 
-rmc-job-name-tyrargo = КМП США Tyrargo Survivor
-rmc-job-description-tyrargo = You are a КМП США Marine. Your training exercises have turned into a massive battle against the xenonids. Do what it takes to survive!
+rmc-job-name-tyrargo = Выживший КМП США на Тирарго
+rmc-job-description-tyrargo = Вы — морпех КМП США. Ваши учения переросли в масштабную битву с ксеноморфами. Сделайте всё, чтобы выжить!
 
-rmc-job-name-tyrargo-cmt = Combat Medical Technician
-rmc-job-prefix-tyrargo-cmt = CMT
-rmc-job-name-tyrargo-cet = Combat Engineering Technician
-rmc-job-prefix-tyrargo-cet = CET
-rmc-job-name-tyrargo-heavy-gunner = Heavy Gunner
-rmc-job-prefix-tyrargo-heavy-gunner = HVG
+rmc-job-name-tyrargo-cmt = Боевой медицинский техник
+rmc-job-prefix-tyrargo-cmt = БМТ
+rmc-job-name-tyrargo-cet = Боевой инженер-техник
+rmc-job-prefix-tyrargo-cet = БИТ
+rmc-job-name-tyrargo-heavy-gunner = Тяжёлый пулемётчик
+rmc-job-prefix-tyrargo-heavy-gunner = Тяж. Пул.
 
 # КОФ SURVIVORS
 
 rmc-job-name-clf-survivor-soldier = Партизан КОФ
-rmc-job-prefix-clf-survivor-soldier = GRL
+rmc-job-prefix-clf-survivor-soldier = ПАРТ
 
 rmc-job-name-clf-survivor-medic = Полевой медик КОФ
-rmc-job-prefix-clf-survivor-medic = MED
+rmc-job-prefix-clf-survivor-medic = МЕД
 
 rmc-job-name-clf-survivor-engineer = Полевой техник КОФ
-rmc-job-prefix-clf-survivor-engineer = TECH
+rmc-job-prefix-clf-survivor-engineer = ТЕХ
 
 rmc-job-name-clf-survivor-commander = Лидер ячейки КОФ
-rmc-job-prefix-clf-survivor-commander = LDR
+rmc-job-prefix-clf-survivor-commander = ЛДР
 
 rmc-job-description-clf-survivor = Вы - член Колониального фронта освобождения, враждебного КМП США.
 

@@ -126,3 +126,10 @@ rmc-announcement-unidentified-lifesigns = [color=#CECECE][font size=14][bold]В�
     Обнаружены неопознанные формы жизни ({ $count }) на борту десантного корабля { $name }. Рекомендация: блокировка внешних портов доступа, включая вентиляционные каналы и шахты.[/bold][/font][/color]
 
 rmc-announcement-shipside-header = Пожалуйста, напишите сообщение для экипажа
+rmc-announcement-echo-confirm-title = Подтвердите активацию
+rmc-announcement-echo-confirm-message = Подтвердите активацию отряда "Эхо" для { $message }
+rmc-announcement-echo-reason-title = Какова цель отряда "Эхо"?
+rmc-announcement-overwatch-untrained = Вы не обучены работе с наблюдением!
+rmc-announcement-evacuation-confirm = Подтвердить?
+rmc-announcement-evacuation-cancel = Отменить эвакуацию
+rmc-announcement-evacuation-initiate = Начать эвакуацию
