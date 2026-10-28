@@ -297,7 +297,7 @@ rmc-ert-announcement-recruiting = {$team} принимает доброволь�
 rmc-ert-announcement-launch = {$team} запущена.
 
 rmc-ert-announcement-cbrn-dispatch = Верховное командование одобрило реагирование на сигнал бедствия. {$team} собирается.
-rmc-ert-announcement-cbrn-arrival = Внимание, это КСША "Курц", мы отправили отряд РХБЗ на ваш корабль по вашему сигналу бедствия. Ожидайте прибытия.
+rmc-ert-announcement-cbrn-arrival = Внимание, это ВКСШ Курц, мы отправили отряд РХБЗ на ваш корабль по вашему сигналу бедствия. Ожидайте прибытия.
 rmc-ert-announcement-cbrn-failed = Верховное командование сообщает, что развёртывание {$team} не удалось: {$reason}
 rmc-ert-announcement-cbrn-denied = Верховное командование отклонило запрос бедствия.
 
