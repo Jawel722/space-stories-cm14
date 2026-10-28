@@ -304,7 +304,7 @@ rmc-job-prefix-soro-sof-sapper = 121/РАЗВЕД САП
 rmc-job-name-soro-sof-medic = Медик ССО
 rmc-job-prefix-soro-sof-medic = 121/РАЗВЕД МЕД
 
-rmc-job-name-soro-sof-sl = Командир отделения ССО
+rmc-job-name-soro-sof-sl = Командир отряда ССО
 rmc-job-prefix-soro-sof-sl = 121/РАЗВЕД КО
 
 rmc-job-name-soro-sof-spec = Специалист ССО
@@ -355,7 +355,7 @@ rmc-job-prefix-crashland-sapper = 173/РАЗВЕД САП
 rmc-job-name-crashland-medic = Воздушно-десантный медик
 rmc-job-prefix-crashland-medic = 173/РАЗВЕД МЕД
 
-rmc-job-name-crashland-sl = Командир отделения ВДВ
+rmc-job-name-crashland-sl = Командир отряда ВДВ
 rmc-job-prefix-crashland-sl = 173/РАЗВЕД КО
 
 rmc-job-name-crashland-spec = Специалист ВДВ

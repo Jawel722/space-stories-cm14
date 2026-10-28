@@ -109,8 +109,8 @@ rmc-job-name-pmc-whiteout-gunner = Боевой юнит с пулеметом �
 
 rmc-job-prefix-pmc-whiteout = БМ
 
-rmc-ghost-name-weya-commando-leader = Командир отделения коммандо Ве-Я (Дружественный)
-rmc-job-name-weya-commando-leader = Командир отделения коммандо
+rmc-ghost-name-weya-commando-leader = Командир отряда коммандо Ве-Я (Дружественный)
+rmc-job-name-weya-commando-leader = Командир отряда коммандо
 
 rmc-ghost-name-weya-commando = Коммандо Ве-Я (Дружественный)
 rmc-job-name-weya-commando = Коммандо
