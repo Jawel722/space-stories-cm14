@@ -178,7 +178,7 @@ rmc-ert-admin-button-pizza = ОТПРАВИТЬ ПИЦЦУ
 rmc-ert-call-cbrn-name = Группа РХБЗ КМП США
 rmc-ert-call-pmc-name = Группа реагирования ЧВК Ве-Я
 rmc-ert-call-pmc-platoon-name = Взвод ЧВК Ве-Я
-rmc-ert-call-weya-bodyguard-name = Отряд охраны руководства Ве-Я
+rmc-ert-call-weya-bodyguard-name = Отряд телохранителей руководства Ве-Я
 rmc-ert-call-weya-bodyguard-goon-name = Головорез-телохранитель Ве-Я
 rmc-ert-call-weya-bodyguard-pmc-name = Телохранитель ЧВК Ве-Я
 rmc-ert-call-weya-bodyguard-pmc-enforcer-name = Телохранитель-силовик ЧВК Ве-Я
@@ -297,12 +297,12 @@ rmc-ert-announcement-recruiting = {$team} принимает доброволь�
 rmc-ert-announcement-launch = {$team} запущена.
 
 rmc-ert-announcement-cbrn-dispatch = Верховное командование одобрило реагирование на сигнал бедствия. {$team} собирается.
-rmc-ert-announcement-cbrn-arrival = Внимание, это USS Kurtz, мы отправили отряд РХБЗ на ваш корабль по вашему сигналу бедствия. Ожидайте прибытия.
+rmc-ert-announcement-cbrn-arrival = Внимание, это КСША "Курц", мы отправили отряд РХБЗ на ваш корабль по вашему сигналу бедствия. Ожидайте прибытия.
 rmc-ert-announcement-cbrn-failed = Верховное командование сообщает, что развёртывание {$team} не удалось: {$reason}
 rmc-ert-announcement-cbrn-denied = Верховное командование отклонило запрос бедствия.
 
 rmc-ert-announcement-pmc-dispatch = Корпоративный экстренный контракт принят. {$team} готовится к развёртыванию.
-rmc-ert-announcement-pmc-arrival = {$ship}, это USCSS Royce отвечает на ваш сигнал бедствия. Мы приступаем к абордажу. Любые враждебные действия будут встречены летальной силой.
+rmc-ert-announcement-pmc-arrival = {$ship}, это коммерческий звездолёт "Ройс" отвечает на ваш сигнал бедствия. Мы приступаем к абордажу. Любые враждебные действия будут встречены летальной силой.
 rmc-ert-announcement-pmc-denied = Корпоративные каналы реагирования отклонили запрос.
 
 rmc-ert-announcement-bodyguard-dispatch = {$ship}, это шаттл отряда корпоративной охраны Ве-Я направляется к маяку представителя.
@@ -326,22 +326,22 @@ rmc-ert-announcement-spp-hostile-arrival = Это абордажный отря�
 
 rmc-ert-announcement-tse-dispatch = {$team} приняла запрос бедствия.
 rmc-ert-announcement-tse-arrival = {$team} состыковалась с боевым кораблём и входит в район операции.
-rmc-ert-announcement-tse-arrival-patna = {$ship}, это HMS Patna; мы отвечаем на ваш сигнал бедствия и начинаем абордаж согласно Закону о военной помощи 2177 года, код аутентификации Lima-18153.
-rmc-ert-announcement-tse-arrival-thunderchild = {$ship}, это HMS Thunderchild; мы отвечаем на ваш сигнал бедствия и начинаем абордаж согласно Закону о военной помощи 2177 года, код аутентификации Lima-18153.
+rmc-ert-announcement-tse-arrival-patna = {$ship}, это КЕВ "Патна"; мы отвечаем на ваш сигнал бедствия и начинаем абордаж согласно Закону о военной помощи 2177 года, код аутентификации Lima-18153.
+rmc-ert-announcement-tse-arrival-thunderchild = {$ship}, это КЕВ "Тандерчайлд"; мы отвечаем на ваш сигнал бедствия и начинаем абордаж согласно Закону о военной помощи 2177 года, код аутентификации Lima-18153.
 
 rmc-ert-announcement-provost-request = Запрошено расследование Провоста!
 
 rmc-ert-announcement-clf-arrival = 'Внимание, вы вторглись на нашу суверенную территорию. Не ждите пощады.'
-rmc-ert-announcement-contractors-arrival = {$ship}, это USCSS Inheritor компании Вэнгардс Эрроу Инкорпорейтед, основные операции; мы отвечаем на ваш сигнал бедствия и начинаем абордаж согласно Закону о военной помощи 2177 года, код аутентификации Lima-18153.
-rmc-ert-announcement-contractors-covert-arrival = {$ship}, это USCSS Samburan компании Вэнгардс Эрроу Инкорпорейтед, специальные операции; мы начинаем абордаж согласно Закону о военной помощи 2177 года, код авторизации X-Ray 19601.
+rmc-ert-announcement-contractors-arrival = {$ship}, это коммерческий звездолёт "Инхеритор" компании Вэнгардс Эрроу Инкорпорейтед, основные операции; мы отвечаем на ваш сигнал бедствия и начинаем абордаж согласно Закону о военной помощи 2177 года, код аутентификации Lima-18153.
+rmc-ert-announcement-contractors-covert-arrival = {$ship}, это коммерческий звездолёт "Самбуран" компании Вэнгардс Эрроу Инкорпорейтед, специальные операции; мы начинаем абордаж согласно Закону о военной помощи 2177 года, код авторизации X-Ray 19601.
 rmc-ert-announcement-freelancers-friendly-arrival = {$ship}, это шаттл фрилансеров, отвечающий на ваш сигнал бедствия. Приготовьтесь к абордажу.
 rmc-ert-announcement-freelancers-hostile-arrival = {$ship}, это шаттл фрилансеров. Мы идём на абордаж; любой, кто встанет на пути, станет законной целью.
-rmc-ert-announcement-wy-commando-arrival = {$ship}, это USCSS Nisshoku отвечает на ваш сигнал бедствия. Мы идём на абордаж. Любые враждебные действия будут встречены летальной силой.
+rmc-ert-announcement-wy-commando-arrival = {$ship}, это коммерческий звездолёт "Ниссёку" отвечает на ваш сигнал бедствия. Мы идём на абордаж. Любые враждебные действия будут встречены летальной силой.
 rmc-ert-announcement-xenos-arrival = Неопознанные враждебные формы жизни проникли на боевой корабль.
 rmc-ert-announcement-feral-xenos-arrival = Неопознанные дикие формы жизни проникли на боевой корабль.
 
 rmc-ert-announcement-pizza-dispatch = Пицца Гэлакси приняла экстренный заказ доставки. {$team} готовится к развёртыванию.
-rmc-ert-announcement-pizza-arrival = 'С вас... шестнадцать порций сырной картошки, восемь больших пицц с двойной начинкой, девять бутылок Four Loko... алло? Есть кто-нибудь на этом корабле? Ваша пицца остывает.'
+rmc-ert-announcement-pizza-arrival = 'С вас... шестнадцать порций сырной картошки, восемь больших пицц с двойной начинкой, девять бутылок "Фор Локо"... алло? Есть кто-нибудь на этом корабле? Ваша пицца остывает.'
 rmc-ert-announcement-supply-drop-dispatch = Получен сигнал автоматического сброса припасов Ве-Я 334-Q. Процедуры стыковки начаты.
 rmc-ert-announcement-supply-drop-arrival = Автоматический сброс припасов Ве-Я 334-Q состыковался с боевым кораблём.
 

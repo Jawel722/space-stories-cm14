@@ -87,7 +87,7 @@ rmc-job-name-pmc-corporate-goon-engi = Корпоративный техник �
 rmc-job-name-pmc-corporate-goon-medic = Корпоративный медик СБ Ве-Я
 rmc-job-name-pmc-corporate-goon-leader = Руководитель корпоративной СБ Ве-Я
 rmc-job-name-pmc-corporate-goon-secguard = Охранник Ве-Я
-rmc-job-name-pmc-corporate-goon-synth = Синтетик корпоративной СБ Ве-Я
+rmc-job-name-pmc-corporate-goon-synth = Корпоративный синтетик СБ Ве-Я
 
 rmc-job-name-pmc-pve-team-leader = Командир группы
 rmc-job-prefix-pmc-pve-team-leader = КГ

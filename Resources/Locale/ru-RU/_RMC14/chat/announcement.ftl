@@ -90,7 +90,7 @@ rmc-announcement-ares-map = [color=#CECECE][font size=14][bold]Объявлен�
 
     { $message }[/bold][/font][/color]
 
-rmc-announcement-ares-varadero = [color=#CECECE][font size=16][bold]Нью-Варадеро, односторонний аварийный ретранслятор КМП США[/bold][/font][/color][color=red][font size=14][bold]
+rmc-announcement-ares-varadero = [color=#CECECE][font size=16][bold]Новый Варадеро, односторонний аварийный ретранслятор КМП США[/bold][/font][/color][color=red][font size=14][bold]
 
     { $message }[/bold][/font][/color]
 
